@@ -21,8 +21,11 @@ CREATE TABLE patients (
 """)
 
 cursor.execute("INSERT INTO doctors VALUES (1, 'Dr. Sharma')")
+cursor.execute("INSERT INTO doctors VALUES(2,'Dr. Adithya')")
 cursor.execute("INSERT INTO patients VALUES (1, 'Rahul', 1)")
 cursor.execute("INSERT INTO patients VALUES (2, 'Anita', 1)")
+cursor.execute("INSERT INTO patients VALUES(1,'Aravind',2)")
+cursor.execute("INSERT INTO patients VALUES(2,'Gayathri',2)")
 
 conn.commit()
 conn.close()
